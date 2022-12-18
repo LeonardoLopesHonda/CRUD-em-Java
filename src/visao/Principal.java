@@ -2,7 +2,6 @@ package visao;
 
 import controle.ContaControle;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
 import modelo.ContaModel;
@@ -72,7 +71,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        JBMostrar_Contas.setText("Mostrar Contas");
+        JBMostrar_Contas.setText("Atualizar");
         JBMostrar_Contas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JBMostrar_ContasActionPerformed(evt);
@@ -89,10 +88,10 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(JBCriar_Conta))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpDesktopLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jpDesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(JBAlterar_Conta, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(JBRemover_Conta, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(JBMostrar_Contas, javax.swing.GroupLayout.Alignment.TRAILING)))
+                .addGroup(jpDesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(JBAlterar_Conta, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(JBRemover_Conta, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(JBMostrar_Contas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jpDesktopLayout.setVerticalGroup(
             jpDesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
